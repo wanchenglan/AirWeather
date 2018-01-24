@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:id="@+id/seleccity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dp"
+        android:background="#000000">
+        <ImageView
+            android:id="@+id/title_selectCity_back"
+            android:layout_width="45.0dp"
+            android:layout_height="45.0dp"
+            android:src="@drawable/base_action_bar_back_normal"/>
+        <ImageView
+            android:layout_width="1.0dp"
+            android:layout_height="40.0dp"
+            android:layout_toRightOf="@id/title_selectCity_back"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:id="@+id/title_selectCity_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="当前城市：北京"
+            android:textColor="#FFFFFF"
+            android:textSize="25.0sp"
+            android:gravity="center">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/selectcity_search_rela"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_toLeftOf="@+id/selectcity_search_buttonrela">
+
+        <SearchView
+            android:id="@+id/selectcity_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#bbcc66"
+            android:paddingLeft="5.0dp"
+            android:visibility="visible"
+            android:queryHint="搜索城市(中文)" />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/selectcity_search_buttonrela"
+    android:layout_width="80.0dp"
+    android:layout_height="45.0dp"
+    android:layout_alignParentRight="true">
+
+    <ImageView
+        android:id="@+id/selectcity_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bbcc66"
+        android:src="@drawable/search_button" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seleccity_title">
+        <ListView
+            android:id="@+id/selectcity_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>
